@@ -32,11 +32,11 @@ My Privacy DNS have 2 option for you to quickly add new phishing domains:
 2. By installing one of the cool Firefox add-ons, GUI, CLI tools: [MYPDNSFF]
 
 
-[//] Links
+[//] # Links
 
-[MP] https://github.com/mitchellkrogza/phishing "Mitchell Krogza Phishing + Whitelist"
-[MPFL] https://github.com/mitchellkrogza/phishing/blob/main/falsepositive.list
-[MPFLRGX] https://github.com/mitchellkrogza/phishing/blob/main/falsepositive_regex.list
-[MPFLRZD] https://github.com/mitchellkrogza/phishing/blob/main/falsepositive_rzd.list
-[MyPDNSR] https://mypdns.eu.org/matrix/reporter/ "My Privacy DNS Webreporter"
-[MYPDNSFF] https://0xacab.org/my-privacy-dns/matrix/-/blob/master/tools/client_addon.md "My Privacy DNS Firefox Add-ons for easy domain reporting"
+[MP]: https://github.com/mitchellkrogza/phishing "Mitchell Krogza Phishing + Whitelist"
+[MPFL]: https://github.com/mitchellkrogza/phishing/blob/main/falsepositive.list
+[MPFLRGX]: https://github.com/mitchellkrogza/phishing/blob/main/falsepositive_regex.list
+[MPFLRZD]: https://github.com/mitchellkrogza/phishing/blob/main/falsepositive_rzd.list
+[MyPDNSR]: https://mypdns.eu.org/matrix/reporter/ "My Privacy DNS Webreporter"
+[MYPDNSFF]: https://0xacab.org/my-privacy-dns/matrix/-/blob/master/tools/client_addon.md "My Privacy DNS Firefox Add-ons for easy domain reporting"
