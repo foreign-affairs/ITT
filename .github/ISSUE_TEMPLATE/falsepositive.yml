@@ -13,13 +13,15 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please list any domains and links listed here which you believe are a false positive.
+        Please list any domains and links listed here which you believe
+        are a false positive.
 
   - type: checkboxes
     id: source
     attributes:
       label: "## More Information"
-      description: How did you discover your web site or domain was listed here?
+      description: |
+        How did you discover your web site or domain was listed here?
       options:
         - label: Website was hacked
           required: true
@@ -27,16 +29,30 @@ body:
         - label: OpenPhish
         - label: VirusTotal
         - label: Other
-      validation:
-        required: true
+
+  - type: textarea
+    id: ifOther
+    attributes:
+      label: If other
+      description: Please tell us where you have requested whitelisting from
+      value: |
+        1. My Privacy DNS
+        2. EasyList
+        3. F-Secure
+      render: text
 
   - type: textarea
     id: removal
     attributes:
-    label: "## Have you requested removal from other sources?"
-    description: |
-      Please include all relevant links to your existing
-      removals / whitelistings.
+      label: "## Have you requested removal from other sources?"
+      description: |
+        Please include all relevant links to your existing
+        removals / whitelistings.
+      value: |
+        1. example.org
+        2. example.com
+        3, example.net
+      render: txt
       
   - type: markdown
     attributes:
