@@ -11,12 +11,12 @@ speed up the process.
 ## Send a Pull Request for faster removal
 
 Users who understand git can creat a Pull Requests, an assist us for faster
-removals by sending a PR to the [MP] repository and
-add the FP domain one of the whitelists:
-  - `falsepositive.list` for a `1 to 1` match [MPFL]
-  - `falsepositive_regex.list` matches against regex. [MPFLRGX]
-  - `falsepositive_rzd.list` This list will tell the system to explicitly check 
-    for the given string plus all possible TLD. [MPFLRZD]
+removals by sending a PR to the [Mitchell Krogza Phishing + Whitelist][MP]
+repository and add the FP domain one of the whitelists:
+  - [falsepositive.list][MPFL] matches `1 to 1`
+  - [falsepositive_regex.list][MPFLRGX] matches against regex.
+  - [falsepositive_rzd.list][MPFLRZD] This list will tell the system to 
+    explicitly check for the given string plus all possible TLD.
 
 Please include the same information as above to help speed up the whitelisting
 process.
@@ -28,11 +28,9 @@ not have access to the logs for why your domain got listed.
 ## Open Source Project domain reporting tools'
 My Privacy DNS have 2 option for you to quickly add new phishing domains:
 
-1. By using the web, support anonymously reporting: [MyPDNSR]    
-2. By installing one of the cool Firefox add-ons, GUI, CLI tools: [MYPDNSFF]
+1. By using the web, support anonymously reporting: [My Privacy DNS Webreporter][MyPDNSR]    
+2. By installing one of the cool [Firefox add-ons, GUI, CLI tools][MYPDNSFF]
 
-
-[//] # Links
 
 [MP]: https://github.com/mitchellkrogza/phishing "Mitchell Krogza Phishing + Whitelist"
 [MPFL]: https://github.com/mitchellkrogza/phishing/blob/main/falsepositive.list
