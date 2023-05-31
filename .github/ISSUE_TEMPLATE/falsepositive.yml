@@ -46,8 +46,8 @@ body:
     attributes:
       label: "Have you requested removal from other sources?"
       description: |
-        Please include all relevant links to your existing
-        removals / whitelistings.
+        "Please include all relevant links to your existing
+        removals / whitelistings."
       value: |
         1. example.org
         2. example.com
