@@ -1,5 +1,5 @@
 name: False Positive
-title: '[FALSE-POSITIVE]: '
+title: '[FALSE-POSITIVE]: YOUR_DOMAIN'
 description: |
   Reporting of any false positives or domains that need to be whitelisted
 labels: ['false positive']
@@ -35,9 +35,9 @@ body:
       label: If other
       description: Please tell us where you have requested whitelisting from
       placeholder: |
-        1. mitchellkrogza - Phishing `https://github.com/mitchellkrogza/phishing/issues/$ID`
-        2. My Privacy DNS `https://examle.net/issue/$ID`
-        3. EasyList `https://examle.org/issue/$ID`
+        1. Mitchell Krogza - Phishing https://github.com/mitchellkrogza/phishing/issues/$ID
+        2. My Privacy DNS https://0xacab.org/my-privacy-dns/matrix/-/issues/$iid
+        3. EasyList https://github.com/easylist/easylist/issues/$ID
       render: Text
 
   - type: textarea
@@ -48,7 +48,7 @@ body:
         Please include all relevant links to your existing
         removals / whitelistings.
       placeholder: |
-        I was marked as phishing at ProjectXYZ where I have requested
+        I was marked as phishing at Project XYZ where I have requested
         to be delisted via issue `https://examle.net/issue/$ID`
       render: Text
 
@@ -74,7 +74,8 @@ body:
     id: additional
     attributes:
       label: Additional context
-      value: Add any other context about the problem here.
+      placeholder: |
+        Add any additinal text about the problem and solutions here.
       render: Text
 
   - type: checkboxes
@@ -85,9 +86,15 @@ body:
         Before you commit this issue, you have to be sure have done the
         following things
       options:
-        - label: Read ans understood ../../CONTRIBUTING.md#false=positives
+        - label: I have delete any, to me known. phishing content from my site
           required: true
         - label: |
-            I accept, if I deliberatly gives false information I risk
-            to never be removed from this list.
+            I have to the best of my knowledge and resources, protected my
+            server(s) against repetition of this problem(S)
+          required: true
+        - label: 'Read and understood [CONTRIBUTING.md](../../CONTRIBUTING.md#false=positives)'
+          required: true
+        - label: |
+            I accept, if I deliberatly gives false information, I risk
+            never to be removed from this or any other blacklist(s).
           required: true

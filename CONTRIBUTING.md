@@ -8,12 +8,14 @@ issue as soon as possible.
 Please make sure you have provided as much information as possible to help
 speed up the process.
 
-## Send a Pull Request for faster removal
+### Send a Pull Request for faster removal
 
 Users who understand git can creat a Pull Requests, an assist us for faster
-removals by sending a PR to the [Mitchell Krogza Phishing + Whitelist][MP]
-repository and add the FP domain one of the whitelists:
-  - [falsepositive.list][MPFL] matches `1 to 1`
+removals by sending a PR to the manual repository of 
+[Mitchell Krogza Phishing + Whitelist][MP] repository and add the FP domain
+one of the whitelists:
+
+  - [falsepositive.list][MPFL] matches `1 on 1`
   - [falsepositive_regex.list][MPFLRGX] matches against regex.
   - [falsepositive_rzd.list][MPFLRZD] This list will tell the system to 
     explicitly check for the given string plus all possible TLD.
