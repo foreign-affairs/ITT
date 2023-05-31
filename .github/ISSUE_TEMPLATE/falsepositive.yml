@@ -92,11 +92,9 @@ body:
             I have to the best of my knowledge and resources, protected my
             server(s) against repetition of this problem(S)
           required: true
-        - label: Read and understood [CONTRIBUTING][CB#false-positives]
+        - label: Read and understood [CONTRIBUTING](https://github.com/spirillen/ITT/blob/master/CONTRIBUTING.md#false-positives)
           required: true
         - label: |
             I accept, if I deliberatly gives false information, I risk
             never to be removed from this or any other blacklist(s).
           required: true
-
-[CB]: https://github.com/spirillen/ITT/blob/master/CONTRIBUTING.md
