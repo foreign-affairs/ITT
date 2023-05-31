@@ -12,6 +12,7 @@ body:
     id: description
     attributes:
       label: Describe the bug
+      placeholder: Clear Text is supported
       description: |
         A clear and concise description of what the bug is.
       render: Text
@@ -23,12 +24,13 @@ body:
     attributes:
       label: Reproduction steps
       description: 'How do you trigger this bug? Please walk us through it step by step.'
+      placeholder: Markdown is supported
       value: |
         1. 
         2. 
         3.
         ...
-      render: bash
+      render: Markdown
     validations:
       required: true
 
@@ -38,7 +40,8 @@ body:
       label: Expected behavior
       description: A clear and concise description of what you expected to happen.
       placeholder: |
-        Really :grey_question:
+        Markdown is supported
+      value: 'Really :grey_question:'
       render: Markdown
     validations:
       required: false
@@ -62,13 +65,18 @@ body:
         I think...
         It comes to my mind...
 
+        Markdown is supported
+      render: Markdown
+    validations:
+      required: false
+
   - type: textarea
     id: log
     attributes:
       label: Paste your log here
       description: |
         If you have a logfile please paste it here to help tracing the issue
-      placeholder: |
+      value: |
         <details><summary>Click to expand</summary>
 
         ```
