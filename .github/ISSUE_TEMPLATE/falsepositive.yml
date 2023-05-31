@@ -92,7 +92,7 @@ body:
             I have to the best of my knowledge and resources, protected my
             server(s) against repetition of this problem(S)
           required: true
-        - label: 'Read and understood [CONTRIBUTING.md](../../CONTRIBUTING.md#false=positives)'
+        - label: 'Read and understood [CONTRIBUTING.md](../CONTRIBUTING.md#false=positives)'
           required: true
         - label: |
             I accept, if I deliberatly gives false information, I risk
