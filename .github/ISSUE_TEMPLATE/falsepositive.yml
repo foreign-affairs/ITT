@@ -9,7 +9,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "## Domains or links"
+      value: "Domains or links"
   - type: markdown
     attributes:
       value: |
@@ -19,7 +19,7 @@ body:
   - type: checkboxes
     id: source
     attributes:
-      label: "## More Information"
+      label: "More Information"
       description: |
         How did you discover your web site or domain was listed here?
       options:
@@ -44,19 +44,19 @@ body:
   - type: textarea
     id: removal
     attributes:
-      label: "## Have you requested removal from other sources?"
+      label: "Have you requested removal from other sources?"
       description: |
         Please include all relevant links to your existing
         removals / whitelistings.
       value: |
         1. example.org
         2. example.com
-        3, example.net
+        3. example.net
       render: txt
       
   - type: markdown
     attributes:
-      value: "## Additional context"
+      value: "Additional context"
   - type: markdown
     attributes:
       value: Add any other context about the problem here.
@@ -73,7 +73,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "## Send a Pull Request for faster removal"
+      value: "Send a Pull Request for faster removal"
 
   - type: markdown
     attributes:
@@ -99,7 +99,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "#### Open Source Project domain reporting tools"
+      value: "##Open Source Project domain reporting tools"
   - type: markdown
     attributes:
       value: |
