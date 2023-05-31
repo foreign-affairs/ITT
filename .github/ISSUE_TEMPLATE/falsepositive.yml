@@ -1,5 +1,5 @@
 name: False Positive
-title: '[FALSE-POSITIVE]: YOUR_DOMAIN'
+title: '[FALSE-POSITIVE] YOUR_DOMAIN'
 description: |
   Reporting of any false positives or domains that need to be whitelisted
 labels:
