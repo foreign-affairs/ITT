@@ -76,3 +76,6 @@ body:
         ```
 
         </details>
+      render: Markdown
+    validations:
+      required: false
