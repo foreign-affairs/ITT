@@ -10,7 +10,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: '## Domains or links'
+      value: "## Domains or links"
   - type: markdown
     attributes:
       value: |
