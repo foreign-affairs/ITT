@@ -61,3 +61,18 @@ body:
       placeholder: |
         I think...
         It comes to my mind...
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Paste your log here
+      description: |
+        If you have a logfile please paste it here to help tracing the issue
+      placeholder: |
+        <details><summary>Click to expand</summary>
+
+        ```
+        Paste your log file here between the backtics
+        ```
+
+        </details>
