@@ -27,16 +27,20 @@ You should note that you should not expect merges are done in [MP] until
 the issue have been solved here, this is because those who can merge do
 not have access to the logs for why your domain got listed.
 
-## Open Source Project domain reporting tools'
-My Privacy DNS have 2 option for you to quickly add new phishing domains:
+## Open Source Project domain reporting tools
+Our friends over at [My Privacy DNS][MYPDNS] have a number of option for you to easily
+and quickly add new domains to a number of categorised blacklists including
+phsishing.
 
 1. By using the web, support anonymously reporting: [My Privacy DNS Webreporter][MyPDNSR]    
-2. By installing one of the cool [Firefox add-ons, GUI, CLI tools][MYPDNSFF]
-
+2. By installing one of the cool [Firefox add-ons, API, GUI, CLI tools][MYPDNSFF]
+3. All of their [commit tools][MYPDNSTL]
 
 [MP]: https://github.com/mitchellkrogza/phishing "Mitchell Krogza Phishing + Whitelist"
 [MPFL]: https://github.com/mitchellkrogza/phishing/blob/main/falsepositive.list
 [MPFLRGX]: https://github.com/mitchellkrogza/phishing/blob/main/falsepositive_regex.list
 [MPFLRZD]: https://github.com/mitchellkrogza/phishing/blob/main/falsepositive_rzd.list
+[MYPDNS]: https://mypdns.eu.org/ "My Privacy DNS Let no one spy on you online"
 [MyPDNSR]: https://mypdns.eu.org/matrix/reporter/ "My Privacy DNS Webreporter"
 [MYPDNSFF]: https://0xacab.org/my-privacy-dns/matrix/-/blob/master/tools/client_addon.md "My Privacy DNS Firefox Add-ons for easy domain reporting"
+[MyPDNTL]: https://0xacab.org/my-privacy-dns/matrix/-/blob/master/tools/README.md "My Privacy DNS easy issue commiting tools"
