@@ -34,7 +34,7 @@ body:
     attributes:
       label: If other
       description: Please tell us where you have requested whitelisting from
-      value: |
+      placeholder: |
         1. mitchellkrogza - Phishing `https://github.com/mitchellkrogza/phishing/issues/$ID`
         2. My Privacy DNS `https://examle.net/issue/$ID`
         3. EasyList `https://examle.org/issue/$ID`
@@ -47,62 +47,47 @@ body:
       description: |
         Please include all relevant links to your existing
         removals / whitelistings.
-      value: |
+      placeholder: |
         I was marked as phishing at ProjectXYZ where I have requested
         to be delisted via issue `https://examle.net/issue/$ID`
       render: Text
 
   - type: textarea
+    id: actions
+    attributes:
+      label: Actions you have taken to fix your domain
+      description: |
+        Descripe what actions and precaution you have done to remove and
+        safeguarding your server against further attack.
+
+        This descriptions should be in headline style to avoid give to much
+        to information to the attacker.
+      placeholder: |
+        - I have deleted infected files
+        - Updated the code as we did find the bug
+        - I did nothing and hoping this won't hapen again, just like that
+      render: Markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
     attributes:
       label: Additional context
       value: Add any other context about the problem here.
       render: Text
 
-  - type: markdown
+  - type: checkboxes
+    id: todo
     attributes:
-      value: |
-        We understand being listed on a Phishing Database like this can be
-        frustrating and embarrassing for many web site owners. The first
-        step is to remain calm. The second step is to rest assured one of
-        our maintainers will address your issue as soon as possible.
-        Please make sure you have provided as much information as possible
-        to help speed up the process.
-
-  - type: markdown
-    attributes:
-      value: '## Send a Pull Request for faster removal'
-
-  - type: markdown
-    attributes:
-      value: |
-        Users who understand github and creating Pull Requests can assist us
-        for faster removals by sending a PR to the **mitchellkrogza/phishing**
-        repository and add the FP domain one of the whitelists:
-        - `falsepositive.list` for a 1 to 1  match
-          https://github.com/mitchellkrogza/phishing/blob/main/falsepositive.list
-        - `falsepositive_regex.list` matches against regex.
-          https://github.com/mitchellkrogza/phishing/blob/main/falsepositive_regex.list
-        - `falsepositive_rzd.list` This list will tell the system to explicitly
-          check for the given string plus all possible TLD.
-          https://github.com/mitchellkrogza/phishing/blob/main/falsepositive_rzd.list
-
-        Please include the same information as above to help speed up the
-        whitelisting process.
-
-        You should note that you should not expect merges are done in
-        https://github.com/mitchellkrogza/phishing until the issue have
-        been solved here, this is because those who can merge do not have
-        access to the logs for why your domain got listed.
-
-  - type: markdown
-    attributes:
-      value: '## Open Source Project domain reporting tools'
-  - type: markdown
-    attributes:
-      value: |
-        My Privacy DNS have 2 option for you to quickly add new phishing domains:
-
-        1. By using the web, support anonymously reporting:
-           https://mypdns.eu.org/matrix/reporter/
-        2. By installing one of the cool Firefox add-ons, GUI, CLI tools:
-           https://0xacab.org/my-privacy-dns/matrix/-/blob/master/tools/client_addon.md
+      label: 'I confirm that i have:'
+      description: |
+        Before you commit this issue, you have to be sure have done the
+        following things
+      options:
+        - label: Read ans understood ../../CONTRIBUTING.md#false=positives
+          required: true
+        - label: |
+            I accept, if I deliberatly gives false information I risk
+            to never be removed from this list.
+          required: true
