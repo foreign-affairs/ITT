@@ -14,7 +14,7 @@ Remember to replace
 
 https://github.com/spirillen/ITT with
 https://github.com/mitchellkrogza/Phishing.Database in 
-.github/ISSUE_TEMPLATE/falsepositive.yml
+`.github/ISSUE_TEMPLATE/falsepositive.yml`
 
 
 ```shell
