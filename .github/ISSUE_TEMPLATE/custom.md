@@ -7,10 +7,10 @@ assignees:
   - funilrys
 
 body:
-- type: markdown
-  attributes:
-    value: '## Domains or links'
-- type: markdown
-  attributes:
-    value: |
-      Please list any domains and links listed here which you believe are a false positive.
+  - type: markdown
+    attributes:
+      value: '## Domains or links'
+  - type: markdown
+    attributes:
+      value: |
+        Please list any domains and links listed here which you believe are a false positive.
