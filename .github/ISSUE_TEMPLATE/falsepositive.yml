@@ -6,7 +6,6 @@ labels: ["false positive"]
 assignees:
   - mitchellkrogza
   - funilrys
-
 body:
   - type: markdown
     attributes:
@@ -22,11 +21,12 @@ body:
       label: "## More Information"
       description: How did you discover your web site or domain was listed here?
       options:
-        - Website was hacked
-        - Phishtank
-        - OpenPhish
-        - VirusTotal
-        - Other
+        - label: Website was hacked
+          required: true
+        - label: Phishtank
+        - label: OpenPhish
+        - label: VirusTotal
+        - label: Other
       validation:
         required: true
 
