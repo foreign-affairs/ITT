@@ -1,4 +1,4 @@
-name: Bug report
+name: Bug report (2)
 description: |
   Create a bug report to help us improve and fix undocumented or unknown
   issues.
@@ -54,10 +54,10 @@ body:
       label: Expected behaviour
       description: |
         A clear and concise description of what you expected to happen.
-      placeholder: 
+      placeholder:
     validations:
       required: false
-       
+
   - type: textarea
     id: screenshot
     attributes:
@@ -68,17 +68,17 @@ body:
         "![Screenshot of example.com](img-src)"
         **INFO**: You can copy paste images directly into this field.
       value: |
-      <details><summary>Screenshot</summary>
+        <details><summary>Screenshot</summary>
 
 
-      </details>
+        </details>
     validations:
       required: false
 
   - type: markdown
     attributes:
       value: Versions
-  
+
   - type: dropdown
     id: OS
     attributes:
