@@ -1,4 +1,4 @@
-name: Bug report (2)
+name: Bug report (@PyFunceble)
 description: |
   Create a bug report to help us improve and fix undocumented or unknown
   issues.
@@ -14,7 +14,6 @@ body:
       description: |
         Please be as clear as possible in your description of what the bug is.
       placeholder: Thanks for taking the time to fill out this bug report!
-      value: 'A bug happened!'
     validations:
       required: true
 
@@ -25,7 +24,6 @@ body:
       description: |
         A clear representation of what you changed into the `.PyFunceble.yaml` and/or what you put into your `.PyFunceble.overwrite.yaml` file.
       placeholder: Tell us what you see!
-      value: 'A bug happened!'
     validations:
       required: false
 
