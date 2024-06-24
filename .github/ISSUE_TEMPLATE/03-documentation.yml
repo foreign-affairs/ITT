@@ -7,6 +7,14 @@ assignees:
 labels: documentation
 projects: ['spirillen/ITT', 'funilrys/pyfunceble']
 body:
+  
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Where did you find this text
+      placeholder: Please add the full URI
+
   - type: textarea
     id: Description
     attributes:
