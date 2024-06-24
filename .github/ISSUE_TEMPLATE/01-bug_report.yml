@@ -6,6 +6,7 @@ title: 'BUG: '
 assignees:
   - funilrys
 labels: bug
+projects: ["spirillen/ITT", "funilrys/pyfunceble"]
 body:
   - type: textarea
     id: bug_description
