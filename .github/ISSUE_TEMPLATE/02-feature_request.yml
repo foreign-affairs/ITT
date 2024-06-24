@@ -9,7 +9,7 @@ labels:
   - enhancement
 projects: ['spirillen/ITT', 'funilrys/pyfunceble']
 body:
-  - type: Description
+  - type: textarea
     id: Description
     attributes:
       label: Description
@@ -20,7 +20,7 @@ body:
     validations:
       required: true
 
-  - type: Possible Solution
+  - type: textarea
     id: possible_solution
     attributes:
       label: Possible Solution
@@ -29,7 +29,7 @@ body:
     validations:
       required: true
 
-  - type: Considered Alternative
+  - type: textarea
     id: considered_alternative
     attributes:
       label: Considered Alternative
@@ -38,7 +38,7 @@ body:
     validations:
       required: false
 
-  - type: Additional context
+  - type: textarea
     id: additional_context
     attributes:
       label: Additional context
