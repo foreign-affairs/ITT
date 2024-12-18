@@ -7,6 +7,9 @@ labels:
 assignees:
   - mitchellkrogza
   - funilrys
+projects:
+  - "https://github.com/orgs/Phishing-Database/projects/2"
+
 body:
   - type: markdown
     attributes:
