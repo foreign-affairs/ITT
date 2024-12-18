@@ -93,7 +93,7 @@ body:
         - label: I have deleted any, to me known, phishing content.
           required: true
         - label: |
-            I have to the best of my knowledge and resources, protected my server against repetition of this problem
+            I have to the best of my knowledge and resources solved the issues
           required: true
         - label: Read and understood [CONTRIBUTING](https://github.com/spirillen/ITT/blob/master/CONTRIBUTING.md#false-positives)
           required: true
