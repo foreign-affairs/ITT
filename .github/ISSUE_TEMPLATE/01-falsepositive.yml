@@ -1,5 +1,5 @@
 name: False Positive
-title: '[FALSE-POSITIVE] YOUR_DOMAIN'
+title: '[FALSE-POSITIVE] $DOMAIN'
 description: |
   Reporting of any false positives or domains that need to be whitelisted
 labels:
@@ -14,8 +14,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please list any domains and links listed here which you believe
-        are a false positive.
+        Please list any domains and links listed here which you believe are a false positive.
 
   - type: checkboxes
     id: source
@@ -45,14 +44,14 @@ body:
 
   - type: textarea
     id: removal
+    validations:
+      required: true
     attributes:
       label: Have you requested removal from other blacklists?
       description: |
-        Please include all relevant links, to any removals / whitelisting 
-        requests.
+        Please include all relevant links, to any removals / whitelisting requests.
       placeholder: |
-        I was marked as phishing at Project XYZ where I have requested
-        to be unlisted via issue `https://examle.net/issue/$ID`
+        I was marked as phishing at Project XYZ where I have requested to be unlisted via issue `https://examle.net/issue/$ID`
       render: Text
 
   - type: textarea
@@ -60,15 +59,14 @@ body:
     attributes:
       label: Actions you have taken to fix your domain
       description: |
-        Describe what actions and precaution you have done to remove and
-        safeguarding your server against further attack.
+        Describe what actions and precaution you have done to remove and safeguarding your server against further attack.
 
-        This descriptions should be in headline style to avoid give to much
-        to information to the attacker.
+        This descriptions should be in headline style to avoid give to much to information to the attacker.
       placeholder: |
         - I have deleted infected files
-        - Updated the code as we did find the bug
+        - Updated the code as we found the bug
         - I did nothing and hoping this won't happen again, just like that
+        - Deleted the scripts in the folder and changed the folder permission (chmod) + changes user ownership (chown)
       render: Markdown
     validations:
       required: true
@@ -86,18 +84,15 @@ body:
     attributes:
       label: 'I confirm that i have:'
       description: |
-        Before you commit this issue, you have to be sure you have done the
-        following things
+        Before you commit this issue, you have to be sure you have done the following things
       options:
         - label: I have deleted any, to me known, phishing content.
           required: true
         - label: |
-            I have to the best of my knowledge and resources, protected my
-            server(s) against repetition of this problem(S)
+            I have to the best of my knowledge and resources, protected my server(s) against repetition of this problem(S)
           required: true
         - label: Read and understood [CONTRIBUTING](https://github.com/spirillen/ITT/blob/master/CONTRIBUTING.md#false-positives)
           required: true
         - label: |
-            I accept, if I deliberately gives false information, I risk
-            never to be removed from this or any other blacklist(s).
+            I accept, if I deliberately gives false information, I risk never to be removed from this or any other blacklist(s).
           required: true
