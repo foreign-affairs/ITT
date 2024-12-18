@@ -19,6 +19,8 @@ body:
 
   - type: checkboxes
     id: source
+    validations:
+      required: true
     attributes:
       label: More Information
       description: |
@@ -36,21 +38,21 @@ body:
       label: If other
       description: Please tell us where you have requested whitelisting from
       placeholder: |
-        1. Mitchell Krogza - Phishing https://github.com/mitchellkrogza/phishing/issues/$ID
-        2. My Privacy DNS https://0xacab.org/my-privacy-dns/matrix/-/issues/$iid
+        1. Mitchell Krogza - Phishing https://github.com/Phishing-Database/phishing/issues/$ID
+        2. My Privacy DNS https://kb.mypdns.org/issue/MTX-$ID
         3. EasyList https://github.com/easylist/easylist/issues/$ID
       render: Text
 
   - type: textarea
     id: removal
     attributes:
-      label: Have you requested removal from other sources?
+      label: Have you requested removal from other blacklists?
       description: |
-        Please include all relevant links to your existing
-        removals / whitelistings.
+        Please include all relevant links, to any removals / whitelisting 
+        requests.
       placeholder: |
         I was marked as phishing at Project XYZ where I have requested
-        to be delisted via issue `https://examle.net/issue/$ID`
+        to be unlisted via issue `https://examle.net/issue/$ID`
       render: Text
 
   - type: textarea
@@ -58,7 +60,7 @@ body:
     attributes:
       label: Actions you have taken to fix your domain
       description: |
-        Descripe what actions and precaution you have done to remove and
+        Describe what actions and precaution you have done to remove and
         safeguarding your server against further attack.
 
         This descriptions should be in headline style to avoid give to much
@@ -66,7 +68,7 @@ body:
       placeholder: |
         - I have deleted infected files
         - Updated the code as we did find the bug
-        - I did nothing and hoping this won't hapen again, just like that
+        - I did nothing and hoping this won't happen again, just like that
       render: Markdown
     validations:
       required: true
@@ -76,7 +78,7 @@ body:
     attributes:
       label: Additional context
       placeholder: |
-        Add any additinal text about the problem and solutions here.
+        Add any additional text about the problem and solutions here.
       render: Text
 
   - type: checkboxes
@@ -84,10 +86,10 @@ body:
     attributes:
       label: 'I confirm that i have:'
       description: |
-        Before you commit this issue, you have to be sure have done the
+        Before you commit this issue, you have to be sure you have done the
         following things
       options:
-        - label: I have delete any, to me known. phishing content from my site
+        - label: I have deleted any, to me known, phishing content.
           required: true
         - label: |
             I have to the best of my knowledge and resources, protected my
@@ -96,6 +98,6 @@ body:
         - label: Read and understood [CONTRIBUTING](https://github.com/spirillen/ITT/blob/master/CONTRIBUTING.md#false-positives)
           required: true
         - label: |
-            I accept, if I deliberatly gives false information, I risk
+            I accept, if I deliberately gives false information, I risk
             never to be removed from this or any other blacklist(s).
           required: true

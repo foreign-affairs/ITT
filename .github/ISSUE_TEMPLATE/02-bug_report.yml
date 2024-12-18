@@ -13,22 +13,23 @@ body:
     attributes:
       label: Describe the bug
       description: |
-        A clear and concise description of what the bug is. (Clear Text)
+        A clear and concise description of the bug. (Clear Text)
       render: Text
     validations:
       required: true
 
   - type: textarea
-    id: repoduce
+    id: reproduce
     attributes:
       label: Reproduction steps
-      description: 'How do you trigger this bug? Please walk us through it step by step. (Markdown)'
+      description: |
+        'How did you trigger the bug? Please walk us through it, step by step.
+        (Markdown)'
       value: |
         1. 
         2. 
         3.
         ...
-      render: Markdown
     validations:
       required: true
 
@@ -38,7 +39,6 @@ body:
       label: Expected behavior
       description: A clear and concise description of what you expected to happen.  (Markdown)
       value: 'Really :grey_question:'
-      render: Markdown
     validations:
       required: false
 
@@ -48,7 +48,11 @@ body:
       label: Screenshots
       description: 'If applicable, add screenshots to help explain your problem.'
       placeholder: Paste your screenshot here...
-      render: Markdown
+      value: |
+        <details><summary>Screenshot</summary>
+        
+        
+        </details>
     validations:
       required: false
 
@@ -60,7 +64,6 @@ body:
       placeholder: |
         I think...
         It comes to my mind...
-      render: Markdown
     validations:
       required: false
 
@@ -78,6 +81,5 @@ body:
         ```
 
         </details>
-      render: Markdown
     validations:
       required: false
