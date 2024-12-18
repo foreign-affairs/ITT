@@ -1,5 +1,5 @@
 name: False Positive
-title: '[FALSE-POSITIVE] $DOMAIN'
+title: 'YOUR_DOMAIN'
 description: |
   Reporting of any false positives or domains that need to be whitelisted
 labels:
@@ -92,11 +92,9 @@ body:
       options:
         - label: I have deleted any, to me known, phishing content.
           required: true
-        - label: |
-            I have to the best of my knowledge and resources solved the issues
+        - label: I have to the best of my knowledge and resources, protected my server against repetition of this problem
           required: true
         - label: Read and understood [CONTRIBUTING](https://github.com/spirillen/ITT/blob/master/CONTRIBUTING.md#false-positives)
           required: true
-        - label: |
-            I accept, if I deliberately gives false information, I risk never to be removed from this or any other blacklist(s).
+        - label: I accept, if I deliberately gives false information, I risk never to be removed from this or any other blacklist(s).
           required: true
