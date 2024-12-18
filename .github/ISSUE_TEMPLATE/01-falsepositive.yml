@@ -19,20 +19,22 @@ body:
       value: |
         Please list any domains and links listed here which you believe are a false positive.
 
-  - type: checkboxes
+  - type: dropdown
     id: source
-    validations:
-      required: true
     attributes:
       label: More Information
+      multiple: true
       description: |
         How did you discover your web site or domain was listed here?
       options:
-        - label: Website was hacked
-        - label: Phishtank
-        - label: OpenPhish
-        - label: VirusTotal
-        - label: Other
+        - Website was hacked
+        - Phishtank
+        - OpenPhish
+        - VirusTotal
+        - Other
+      default: 0
+    validations:
+      required: true
 
   - type: textarea
     id: ifOther
