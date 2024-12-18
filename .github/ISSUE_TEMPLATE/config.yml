@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Report new phishing url or domain to mitchellkrogza/Phishing.Database
-    url: https://github.com/mitchellkrogza/Phishing
+  - name: Report new phishing url or domain to Phishing-Database/Phishing.Database
+    url: https://github.com/Phishing-Database/Phishing
     about: To manually submit new phishing, please report to https://github.com/Phishing-Database/phishing
   - name: Mitchell Krogza Phishing Database
-    url: https://github.com/mitchellkrogza/Phishing.Database
+    url: https://github.com/Phishing-Database/Phishing.Database
     about: Phishing Database
