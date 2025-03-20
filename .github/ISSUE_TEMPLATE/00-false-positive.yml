@@ -9,11 +9,11 @@ body:
   - type: markdown
     attributes:
       value: |+
-        Thank you for reporting a false positive**\***!
+        Thank you for reporting a false positive(*)!
 
         Please read this carefully. Cutting corners will delay the resolution of your issue!
 
-        We know this can be frustrating and confusing for webmasters, developers, and website owners. Please be patient; one of our team members will look into your issue as soon as possible. 
+        We know this can be frustrating and confusing for webmasters, developers, and website owners. Please be patient; one of our team members will look into your issue as soon as possible.
 
         To help us understand the problem, please provide clear and accurate information without unnecessary details. Keep your responses short and to the point. Our team knows what information they need, and they will ask for more if necessary.
 
@@ -29,10 +29,11 @@ body:
         - **Review Requests**: If you have asked for a review from other sources, just mention who it was, without a long explanation. We will ask for more details if needed. Please use the "Relevant links" to link to any resources
 
         If you have any questions or need assistance, please ask in our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
-        
+
         * What is a [false positive](https://kb.mypdns.org/articles/MTX-A-82) (Firefox only)
 
-        Thank you,  
+        Thank you,
+        
         The Phishing Database Project Team.
 
   - type: textarea
@@ -83,7 +84,7 @@ body:
       label: Why do you believe this is a false-positive?
       description: |
         Please explain why you believe this is a false-positive.
-        
+
         Please warn with "**NSFW**" where applicable.
       placeholder: |
         I believe this is a false-positive because...
