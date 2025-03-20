@@ -16,7 +16,7 @@ body:
         We know this can be frustrating and confusing for webmasters, developers, and website owners. Please be patient; one of our team members will look into your issue as soon as possible.
 
         To help us understand the problem, please provide clear and accurate information without unnecessary details. Keep your responses short and to the point. Our team knows what information they need, and they will ask for more if necessary.
-
+        
         ### Important Notes:
         - **Title**: Please only enter your domain name or IP.
         - **One Issue per Domain**: Only report one domain per issue. If you have multiple issues, please use the comments section to refer to them instead of repeating everything.
@@ -83,9 +83,11 @@ body:
     attributes:
       label: Why do you believe this is a false-positive?
       description: |
-        Please explain why you believe this is a false-positive.
-
-        Please warn with "**NSFW**" where applicable.
+        Please explain why you think this is a false positive.
+  
+        **Warning**
+        - Please label with "**NSFW**" where appropriate.
+        - Enclose any links and domains in backticks.
       placeholder: |
         I believe this is a false-positive because...
     validations:
@@ -136,6 +138,7 @@ body:
       label: Relevant links
       description: |
         Here, you can include any relevant links, such as requests for removal from third-party resources like PhisTank.
+      render: text
     validations:
       required: false
 
