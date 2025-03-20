@@ -10,7 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |+
-        Thank you for reporting a false positive!
+        Thank you for reporting a [false positive](https://kb.mypdns.org/articles/MTX-A-82) (Firefox only)!
 
         We know this can be frustrating and confusing for webmasters, developers, and website owners. Please be patient; one of our team members will look into your issue as soon as possible. 
 
