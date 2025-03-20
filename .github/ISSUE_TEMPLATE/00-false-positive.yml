@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |+
-        Thank you for reporting a false positive[sup]*[sup]!
+        Thank you for reporting a false positive*****!
 
         Please read this carefully. Cutting corners will delay the resolution of your issue!
 
