@@ -1,16 +1,15 @@
 name: False Positive Report
 description: Create a report to suggest a false positive.
-title: "example.com"
-labels:
-  - "false positive"
-  - "verification"
+title: "DOMAIN_ONLY"
+labels: [ "false positive", "verification" ]
 projects:
   - Phishing-Database/2
+
 body:
   - type: markdown
     attributes:
       value: |+
-        Thank you for reporting a [false positive](https://kb.mypdns.org/articles/MTX-A-82) (Firefox only)!
+        Thank you for reporting a false positive[sup]*[sup]!
 
         Please read this carefully. Cutting corners will delay the resolution of your issue!
 
@@ -22,14 +21,16 @@ body:
         - **Title**: Please only enter your domain name or IP.
         - **One Issue per Domain**: Only report one domain per issue. If you have multiple issues, please use the comments section to refer to them instead of repeating everything.
         - **Basic Information Only**: When filling in the text boxes, do not include protocols like `https`. This applies to:
-          - Domain
-          - URIs
-          - IP addresses and ranges (use CIDR notation, e.g., `192.0.2.0` or `192.0.2.0/24`)
+          - **Domain**
+          - **URIs**
+          - **IP** addresses and ranges (use CIDR notation, e.g., `192.0.2.0` or `192.0.2.0/24`)
         - **Comments**: Add any comments in the "Please explain why you believe this is a false positive" section only.
         - **Discovery**: "How did you discover this false positive?" is optional but appreciated.
-        - **Review Requests**: If you have asked for a review from other sources, just mention who it was, without a long explanation. We will ask for more details if needed.
+        - **Review Requests**: If you have asked for a review from other sources, just mention who it was, without a long explanation. We will ask for more details if needed. Please use the "Relevant links" to link to any resources
 
         If you have any questions or need assistance, please ask in our [Discussions](https://github.com/Phishing-Database/dev-center/discussions) section.
+        
+        * What is a [false positive](https://kb.mypdns.org/articles/MTX-A-82) (Firefox only)
 
         Thank you,  
         The Phishing Database Project Team.
@@ -40,8 +41,6 @@ body:
       label: What are the subjects of the false-positive domain
       description: |
         Please list the domains that you believe are false-positives.
-
-        Please warn with "NSFW" where applicable.
       placeholder: |
         example.com
       render: Text
@@ -55,8 +54,6 @@ body:
       label: What are the subjects of the false-positive URLs
       description: |
         Please list any URLs that you believe are false-positives.
-
-        Please warn with "NSFW" where applicable.
       placeholder: |
         example.com/page
         sub.example.com/page
@@ -71,24 +68,29 @@ body:
       label: What are the subjects of the false-positive IP
       description: |
         Please list IPs that you believe are false-positives.
-
-        Please warn with "NSFW" where applicable.
       placeholder: |
         192.0.2.0
+        - or -
         192.0.2.0/24
       render: Text
     validations:
       required: false
 
+
   - type: textarea
     id: info
     attributes:
       label: Why do you believe this is a false-positive?
-      description: Please explain why you believe this is a false-positive.
+      description: |
+        Please explain why you believe this is a false-positive.
+        
+        Please warn with "**NSFW**" where applicable.
       placeholder: |
         I believe this is a false-positive because...
     validations:
       required: true
+
+
   - type: dropdown
     id: discovery
     attributes:
@@ -103,6 +105,7 @@ body:
         - Other (Please fill out the next box)
     validations:
       required: true
+
 
   - type: textarea
     id: discovery_other
@@ -124,6 +127,17 @@ body:
         I have requested a review from...
     validations:
       required: false
+
+
+  - type: textarea
+    id: links
+    attributes:
+      label: Relevant links
+      description: |
+        Here, you can include any relevant links, such as requests for removal from third-party resources like PhisTank.
+    validations:
+      required: false
+
 
   - type: textarea
     id: screenshot
