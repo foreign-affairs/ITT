@@ -2,6 +2,7 @@ name: False Positive Report
 description: Create a report to suggest a false positive.
 title: "DOMAIN_ONLY"
 labels: [ "false positive", "verification" ]
+type: Task
 projects:
   - Phishing-Database/2
 
