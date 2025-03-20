@@ -12,13 +12,15 @@ body:
       value: |+
         Thank you for reporting a [false positive](https://kb.mypdns.org/articles/MTX-A-82) (Firefox only)!
 
+        Please read this carefully. Cutting corners will delay the resolution of your issue!
+
         We know this can be frustrating and confusing for webmasters, developers, and website owners. Please be patient; one of our team members will look into your issue as soon as possible. 
 
         To help us understand the problem, please provide clear and accurate information without unnecessary details. Keep your responses short and to the point. Our team knows what information they need, and they will ask for more if necessary.
 
         ### Important Notes:
-        - **Title**: Please enter your domain name or IP only.
-        - **One Issue per Domain**: Only report one issue per domain. If you have multiple issues, please use the comments section to refer to them instead of repeating everything.
+        - **Title**: Please only enter your domain name or IP.
+        - **One Issue per Domain**: Only report one domain per issue. If you have multiple issues, please use the comments section to refer to them instead of repeating everything.
         - **Basic Information Only**: When filling in the text boxes, do not include protocols like `https`. This applies to:
           - Domain
           - URIs
@@ -56,11 +58,11 @@ body:
 
         Please warn with "NSFW" where applicable.
       placeholder: |
-        https://example.com/page
-        https://sub.example.com/page
+        example.com/page
+        sub.example.com/page
       render: Text
     validations:
-      required: true
+      required: false
 
 
   - type: textarea
@@ -72,10 +74,11 @@ body:
 
         Please warn with "NSFW" where applicable.
       placeholder: |
+        192.0.2.0
         192.0.2.0/24
       render: Text
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: info
@@ -109,7 +112,7 @@ body:
       placeholder: |
         I discovered this false-positive by...
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: peer_sources_review
